@@ -1,0 +1,15 @@
+{
+  "name": "doctest",
+  "version": "1.0.0",
+  "description": "Test Project to test docs with versioning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "typedoc --out docs src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typedoc": "^0.25.4"
+  }
+}
