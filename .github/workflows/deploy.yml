@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Update Docs
+      - name: Update Docs run script
         run: npm run docs
 
       # https://github.com/marketplace/actions/github-pages-action
