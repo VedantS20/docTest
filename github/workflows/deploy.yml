@@ -5,9 +5,11 @@ on:
     branches:
       - main
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+
+  build:
+    runs-on: ubuntu-latest 
     steps:
+        steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
         with:
@@ -21,6 +23,15 @@ jobs:
 
       - name: Update Docs
         run: npm run docs
+
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
       # https://github.com/marketplace/actions/github-pages-action
       - name: Deploy 🚀
