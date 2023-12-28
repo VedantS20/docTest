@@ -1,5 +1,5 @@
 {
-  "name": "doctest",
+  "name": "doctestapp",
   "version": "1.0.0",
   "description": "Test Project to test docs with versioning",
   "main": "index.js",
